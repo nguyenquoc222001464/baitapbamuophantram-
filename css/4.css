@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --body-font: "Montserrat", sans-serif;
+
+  /* Colors */
+  --color-white: hsl(252, 30%, 100%);
+  --color-light: hsl(252, 30%, 92%);
+  --color-dark: hsl(252, 30%, 17%);
+  /* Size */
+  --h1-font-size: 8rem;
+  --h2-font-size: 3rem;
+  --h3-font-size: 1.125rem;
+  --text-font-size: 2.5rem;
+  /* Weights */
+  --font-medium: 400;
+  --font-light: 300;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  /* Margins */
+  --m-0-5: 0.5rem;
+  --m-0-75: 0.75rem;
+  --m-1: 1rem;
+  --m-1-5: 1.5rem;
+  --m-2: 2rem;
+  --m-2-5: 2.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+h1,h2,h3,h4,h5,h6,p,input,a {
+    color: var(--color-dark)
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100vw;
+    height: 50vh;
+}
+
+.container-1 {
+    padding: 5rem 5rem 2rem;
+}
+
+.container-1 h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--body-font);
+}
+
+.container-1 h1 {
+    color: #829c2d;
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.container-1 p {
+    font-size: var(--text-font-size);
+    font-weight: var(--font-medium);
+}
+
+.container-1 span {
+    padding: .625rem 1.25rem;
+    background-color: #486138;
+    font-weight: var(--font-semi-bold);
+    font-size: var(--h3-font-size);
+    position: absolute;
+    right: 200px;
+    top: 40%;
+    color: var(--color-white);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image {
+    flex: 0 0 30%;
+    max-width: 100%;
+}

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --body-font: "Montserrat", sans-serif;
+
+  /* Colors */
+  --color-white: hsl(252, 30%, 100%);
+  --color-light: hsl(252, 30%, 92%);
+  --color-dark: hsl(252, 30%, 17%);
+  /* Size */
+  --h1-font-size: 6rem;
+  --h2-font-size: 3rem;
+  --h3-font-size: 1.875rem;
+  --text-font-size: 1.5rem;
+  /* Weights */
+  --font-medium: 400;
+  --font-light: 300;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  /* Margins */
+  --m-0-5: 0.5rem;
+  --m-0-75: 0.75rem;
+  --m-1: 1rem;
+  --m-1-5: 1.5rem;
+  --m-2: 2rem;
+  --m-2-5: 2.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+h1,h2,h3,h4,h5,h6,p,input,a {
+    color: var(--color-white)
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/Background_1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem;
+}
+.title-box {
+    max-width: 600px;
+    margin: auto;
+}
+.title-box h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    max-width: 450px;
+}
+.title-box h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+}
+.title-box h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.info-box {
+    margin-top: 10rem;
+    max-width: 700px;
+}
+
+.info-box hr {
+    color: var(--color-white);
+    width: 200px;
+    height: 2px;
+    background-color: var(--color-white);
+    border: none;
+}
+
+.info-box p {
+    margin: .5rem 0;
+    font-weight: var(--font-light);
+    font-size: var(--text-font-size)
+}
+
+.info-box .info-box-icons {
+    background-image: url("../images/Graphic Elements.png");
+    width: 200px;
+    height: 50px;
+    background-repeat: no-repeat;
+}

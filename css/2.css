@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --body-font: "Montserrat", sans-serif;
+
+  /* Colors */
+  --color-white: hsl(252, 30%, 100%);
+  --color-light: hsl(252, 30%, 92%);
+  --color-dark: hsl(252, 30%, 17%);
+  /* Size */
+  --h1-font-size: 8rem;
+  --h2-font-size: 3rem;
+  --h3-font-size: 1.875rem;
+  --text-font-size: 1.5rem;
+  /* Weights */
+  --font-medium: 400;
+  --font-light: 300;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  /* Margins */
+  --m-0-5: 0.5rem;
+  --m-0-75: 0.75rem;
+  --m-1: 1rem;
+  --m-1-5: 1.5rem;
+  --m-2: 2rem;
+  --m-2-5: 2.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+h1,h2,h3,h4,h5,h6,p,input,a {
+    color: var(--color-dark)
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100vw;
+}
+
+.container-1 {
+    height: 70vh;
+    background-image: url("../images/Background_2.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-2 {
+    height: 30vh;
+    background-color: whitesmoke;
+}
+
+.row {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 2rem;
+    justify-content: space-around;
+}
+.row .item {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.item span {
+    font-size: var(--text-font-size);
+    font-weight: var(--font-medium);
+    margin: .75rem 0 1.5rem;
+    display: inline-block;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+.icon-1 {
+    background-image: url('../images/Graphic Elements_23.png');
+}
+.icon-2 {
+    background-image: url('../images/Graphic Elements_22.png');
+}
+.icon-3 {
+    background-image: url('../images/Graphic Elements_21.png');
+}
+
+.item p {
+    padding: 0 .225rem;
+}
+
+.title-box {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 70%;
+    left: 16%;
+    transform: translate(-25%, -50%);
+}
+
+.title-box h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+}
+
+.title-box h3 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-light);
+}
